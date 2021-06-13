@@ -1,6 +1,8 @@
 # Dashboard App 
 This project was my biggest challenge so far and many times through it i thought about giving up but here we are! 🥳
 
+Live website 👉🏾 https://finpayapp.netlify.app/ (* Not responsive Yet *)
+
 # Couple Things i learned building this one: 
 How to break a problem into small pieces.
 
