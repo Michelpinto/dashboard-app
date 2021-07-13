@@ -14,8 +14,11 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 html {
-    
         font-size: 62.5%;
+
+        @media ${(props) => props.theme.breakpoints.lg} {
+        font-size: 50%;
+    }
 }
 
 a {
