@@ -1,5 +1,6 @@
 import Home from "./Pages/Home";
 import Dashboard from "./Pages/Dashboard";
+import { GlobalStyles } from "./styles/Globalstyles";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -16,6 +17,8 @@ function App() {
                     </Route>
                 </Switch>
             </Router>
+
+            <GlobalStyles />
         </>
     );
 }
