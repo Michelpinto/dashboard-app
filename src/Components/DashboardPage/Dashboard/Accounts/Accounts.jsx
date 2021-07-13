@@ -65,13 +65,6 @@ const Accounts = ({ balance, savBalance, activity, savActivity }) => {
         <Container>
             <Tittle>Accounts</Tittle>
             <Div>
-                {/* {accounts.map((acc) => (
-                    <Card className={classes.root} key={acc.id}>
-                        <h2>{acc.name}</h2>
-                        <h4>Acc balance</h4>
-                        <p>{acc.id === 0 ? balance : savBalance} €</p>
-                    </Card>
-                ))} */}
                 <Card
                     className={classes.root}
                     onClick={() => {
