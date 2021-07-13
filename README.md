@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Dashboard App 
+This project was my biggest challenge so far and many times through it i thought about giving up but here we are! 🥳
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live website 👉🏾 https://finpayapp.netlify.app/ (* Not responsive Yet *)
 
-## Available Scripts
+# Motivation: 
 
-In the project directory, you can run:
+I am a big fan of finTech, DeFi and many others so I decided to give it a try and I am already planning to build a better fintech web app.
 
-### `npm start`
+I come from a country where money doesn't move quick because of the bureacracy involved and this is one field I hope to tackle in the future.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Couple Things i learned building this one: 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- How to break a problem into small pieces.
 
-### `npm test`
+- How to play with routers (at the beginning they were playing with me).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- How to setup state in the parent component and pass it down as props to children (learned this on tutorials but its always different when you're building your own project).
 
-### `npm run build`
+- How to use the console for trial and error 👌🏽
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- How to deal with transfers and forms
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- How to do conditional rendering (This one took me 2 days to figure it out and it was so simple 🥲)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- How to use spread operators for conditional logic.
 
-### `npm run eject`
+- It's okay to cry when nothing seems to work 😂
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Features 🪄
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - Money transfer between Checking and Savings accounts
+ 
+ - Money transfer out of the whole account (they'll appear at recent transactions as 'payment')
+ 
+ - Ability to check both accounts recent transactions
