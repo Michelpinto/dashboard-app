@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     height: 100vh;
     padding: 3rem;
     background: url(${Img}) center no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
