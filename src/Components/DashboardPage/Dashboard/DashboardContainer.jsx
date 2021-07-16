@@ -13,8 +13,13 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "space-between",
         backgroundColor: theme.palette.background.default,
-        padding: "3rem",
+        padding: "2rem",
         color: "#345678",
+    },
+    "@media (min-width: 1200px)": {
+        root: {
+            padding: "3rem",
+        },
     },
 }));
 

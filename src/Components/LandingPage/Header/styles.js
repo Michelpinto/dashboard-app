@@ -11,12 +11,20 @@ export const Content = styled.div`
     flex-direction: row;
     align-items: baseline;
     gap: 6rem;
+
+    @media ${(props) => props.theme.breakpoints.xs} {
+        gap: 3rem;
+    }
 `;
 
 export const UnList = styled.ul`
     display: flex;
     gap: 3rem;
     font-size: 1.5rem;
+
+    @media ${(props) => props.theme.breakpoints.xs} {
+        flex-direction: column;
+    }
 `;
 
 export const List = styled.li`
@@ -35,8 +43,9 @@ export const Btns = styled.div`
 `;
 
 export const Button = styled.button`
-    height: 3rem;
-    width: 6rem;
+    height: fit-content;
+    padding: 0.7rem;
+    width: fit-content;
     border-radius: 5px;
     color: #fff;
     border: none;

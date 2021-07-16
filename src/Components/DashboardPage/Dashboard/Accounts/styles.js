@@ -28,6 +28,10 @@ export const Info = styled.div`
     justify-content: space-between;
     width: 30rem;
 
+    @media ${(props) => props.theme.breakpoints.xl} {
+        width: 25rem;
+    }
+
     & p {
         font-weight: 400;
         font-size: 1.5rem;

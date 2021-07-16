@@ -17,6 +17,11 @@ export const Profile = styled.div`
         width: 9rem;
         height: 9rem;
         border-radius: 50%;
+
+        @media ${(props) => props.theme.breakpoints.lg} {
+            width: 7rem;
+            height: 7rem;
+        }
     }
 `;
 
@@ -47,7 +52,11 @@ export const Button = styled.button`
 `;
 
 export const Line = styled.span`
-    width: 18.5rem;
+    width: 16.5rem;
     margin-top: 3rem;
     border: solid 0.15px #506d8b;
+
+    @media ${(props) => props.theme.breakpoints.lg} {
+        width: 12.5rem;
+    }
 `;

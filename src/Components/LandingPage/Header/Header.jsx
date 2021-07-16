@@ -13,6 +13,7 @@ const Header = () => {
                     <List>Contact us</List>
                 </UnList>
             </Content>
+
             <Btns>
                 <Button>Sign Up</Button>
 

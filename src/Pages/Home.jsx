@@ -12,6 +12,10 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        padding: 1.5rem;
+    }
 `;
 
 const Home = () => {
