@@ -8,6 +8,7 @@ import {
     OutlinedInput,
     InputAdornment,
 } from "@material-ui/core";
+
 import useStyles, {
     Title,
     Text,
@@ -15,6 +16,7 @@ import useStyles, {
     Button,
     SecondForms,
     Div,
+    CardDiv,
 } from "./styles";
 
 const faces = [
@@ -33,7 +35,7 @@ const FormsContainer = ({
     const classes = useStyles();
 
     return (
-        <Card className={classes.card}>
+        <CardDiv>
             <Title>Quick Payments</Title>
             <div>
                 {faces.map((face) => (
@@ -114,7 +116,7 @@ const FormsContainer = ({
                     <Button onClick={handleIntraTransfer}>Send money</Button>
                 </Div>
             </Forms>
-        </Card>
+        </CardDiv>
     );
 };
 

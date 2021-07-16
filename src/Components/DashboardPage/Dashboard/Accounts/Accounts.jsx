@@ -8,6 +8,10 @@ import { Router, Link, Route, Switch } from "react-router-dom";
 // Styling
 const Container = styled.div`
     width: 50%;
+
+    @media screen and (max-width: 1100px) {
+        width: 47.5%;
+    }
 `;
 
 const Div = styled.div`
@@ -34,39 +38,44 @@ const Tittle = styled.h1`
     margin-bottom: 2rem;
 `;
 
-export const Block = styled.div`
+const Block = styled.div`
     margin-top: 4rem;
     height: 3rem;
 `;
 
-const useStyles = makeStyles({
-    root: {
-        padding: "3rem",
-        width: "15rem",
-        height: "15rem",
-        borderRadius: "1.5rem",
+const CardDiv = styled.div`
+    padding: 3rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.5rem;
+    background-color: #fff;
 
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "1.5rem",
-        color: "#345678",
-        cursor: "pointer",
-    },
-});
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: #506d8b;
+    cursor: pointer;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    @media screen and (max-width: 1000px) {
+        padding: 2rem;
+        width: 13.5rem;
+        height: 13.5rem;
+    }
+`;
 
 // Object Array
 
 const Accounts = ({ balance, savBalance, activity, savActivity }) => {
     const [isActive, setIsActive] = useState("checking");
-    const classes = useStyles();
 
     return (
         <Container>
             <Tittle>Accounts</Tittle>
             <Div>
-                <Card
-                    className={classes.root}
+                <CardDiv
                     onClick={() => {
                         setIsActive("checking");
                     }}
@@ -74,10 +83,9 @@ const Accounts = ({ balance, savBalance, activity, savActivity }) => {
                     <h2>Checking</h2>
                     <h4>Acc balance</h4>
                     <p>{balance} €</p>
-                </Card>
+                </CardDiv>
 
-                <Card
-                    className={classes.root}
+                <CardDiv
                     onClick={() => {
                         setIsActive("savings");
                     }}
@@ -85,7 +93,7 @@ const Accounts = ({ balance, savBalance, activity, savActivity }) => {
                     <h2>Savings</h2>
                     <h4>Acc balance</h4>
                     <p>{savBalance} €</p>
-                </Card>
+                </CardDiv>
             </Div>
             <Block>
                 <h1>Recent activity</h1>

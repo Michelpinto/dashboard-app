@@ -8,6 +8,12 @@ export default makeStyles((muiBaseTheme) => ({
         color: "#506d8b",
 
         padding: "3rem",
+
+        "@media (min-width: 1100px)": {
+            card: {
+                width: "32.5rem",
+            },
+        },
     },
 
     avatar: {
@@ -27,6 +33,26 @@ export default makeStyles((muiBaseTheme) => ({
         // margin: "-2rem",
     },
 }));
+
+export const CardDiv = styled.div`
+    height: 100%;
+    width: 35rem;
+    color: #506d8b;
+
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    /* @media ${(props) => props.theme.breakpoints.xl} {
+        width: 33.5rem;
+        padding: 2rem;
+    } */
+
+    @media screen and (max-width: 1100px) {
+        padding: 2rem;
+        width: 32.5rem;
+    }
+`;
 
 export const Title = styled.h1`
     margin-bottom: 2rem;

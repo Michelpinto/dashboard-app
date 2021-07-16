@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    /* margin-top: 2rem; */
+export const Div = styled.div`
+    overflow-y: scroll;
+    max-height: 39rem;
 `;
-
-// export const Block = styled.div`
-//     height: 3rem;
-// `;
 
 export const Content = styled.div`
     display: flex;
@@ -14,7 +11,6 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: baseline;
     padding: 2rem 0;
-    /* font-size: 1.5rem; */
     border-bottom: 1px solid #c4c4c4;
 
     &:last-child {
@@ -32,6 +28,10 @@ export const Info = styled.div`
         width: 25rem;
     }
 
+    @media screen and (max-width: 1100px) {
+        width: 23.5rem;
+    }
+
     & p {
         font-weight: 400;
         font-size: 1.5rem;
@@ -41,9 +41,4 @@ export const Info = styled.div`
 export const Text = styled.p`
     font-size: 1.5rem;
     font-weight: 600;
-`;
-
-export const Div = styled.div`
-    overflow-y: scroll;
-    max-height: 39rem;
 `;

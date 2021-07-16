@@ -9,6 +9,10 @@ const Wrapper = styled.section`
 
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1100px) {
+        padding: 3rem 2.5rem;
+    }
 `;
 
 const Button = styled.button`
