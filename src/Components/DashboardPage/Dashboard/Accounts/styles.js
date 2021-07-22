@@ -32,9 +32,24 @@ export const Info = styled.div`
         width: 23.5rem;
     }
 
+    @media screen and (max-width: 360px) {
+        width: 21rem;
+    }
+
+    @media screen and (max-width: 330px) {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5px;
+        width: fit-content;
+    }
+
     & p {
         font-weight: 400;
         font-size: 1.5rem;
+    }
+
+    & p:last-child {
+        font-size: 1.3rem;
     }
 `;
 

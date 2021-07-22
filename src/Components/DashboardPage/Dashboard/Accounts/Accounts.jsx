@@ -12,11 +12,24 @@ const Container = styled.div`
     @media screen and (max-width: 1100px) {
         width: 47.5%;
     }
+
+    @media ${(props) => props.theme.breakpoints.lg} {
+        width: 70%;
+        align-self: center;
+    }
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        width: 100%;
+    }
 `;
 
 const Div = styled.div`
     display: flex;
     gap: 3rem;
+
+    @media screen and (max-width: 330px) {
+        gap: 1.5rem;
+    }
 
     & h2 {
         font-weight: 400;

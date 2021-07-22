@@ -1,27 +1,32 @@
 import { useState } from "react";
 import Accounts from "./Accounts/Accounts";
-import { makeStyles } from "@material-ui/core/styles";
 
-import { Card } from "@material-ui/core";
 import FormsContainer from "./Forms/FormsContainer";
+import styled from "styled-components";
 
 // Styles
-const useStyles = makeStyles((theme) => ({
-    root: {
-        width: "75%",
-        height: "100%",
-        display: "flex",
-        justifyContent: "space-between",
-        backgroundColor: theme.palette.background.default,
-        padding: "2rem",
-        color: "#345678",
-    },
-    "@media (min-width: 1200px)": {
-        root: {
-            padding: "3rem",
-        },
-    },
-}));
+
+const CardDiv = styled.div`
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    color: #345678;
+
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    @media ${(props) => props.theme.breakpoints.lg} {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 85%;
+    }
+`;
 
 // Objects
 const accounts = [
@@ -81,8 +86,6 @@ const DashboardContainer = () => {
             movement: 900,
         },
     ]);
-
-    const classes = useStyles();
 
     // dates
     const today = new Date();
@@ -180,7 +183,7 @@ const DashboardContainer = () => {
     };
 
     return (
-        <Card className={classes.root}>
+        <CardDiv>
             <Accounts
                 accounts={accounts}
                 balance={balance}
@@ -194,7 +197,7 @@ const DashboardContainer = () => {
                 handleTransfer={handleTransfer}
                 handleIntraTransfer={handleIntraTransfer}
             />
-        </Card>
+        </CardDiv>
     );
 };
 

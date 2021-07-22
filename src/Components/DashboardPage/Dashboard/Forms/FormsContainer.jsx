@@ -1,5 +1,4 @@
 import {
-    Card,
     TextField,
     Avatar,
     Divider,
@@ -91,6 +90,7 @@ const FormsContainer = ({
                                     shrink: true,
                                 }}
                                 variant="outlined"
+                                fullWidth
                             />
                         </div>
                         <div>

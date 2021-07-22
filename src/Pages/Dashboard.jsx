@@ -4,14 +4,18 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-    /* min-height: auto; */
     padding: 3rem;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     @media screen and (max-width: 1100px) {
         padding: 3rem 2.5rem;
+    }
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        padding: 3rem 1.5rem;
     }
 `;
 
@@ -22,7 +26,6 @@ const Button = styled.button`
     cursor: pointer;
     color: #345678;
     transition: all 0.2s;
-    /* margin-left: 1rem; */
 
     &:hover {
         color: #506d8b;

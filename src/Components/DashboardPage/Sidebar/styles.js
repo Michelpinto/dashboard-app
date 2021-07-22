@@ -7,6 +7,10 @@ export const Profile = styled.div`
     justify-items: center;
     margin-bottom: 4rem;
 
+    @media screen and (max-width: 400px) {
+        display: none;
+    }
+
     & p {
         font-size: 1.5rem;
         color: #506d8b;
@@ -21,6 +25,17 @@ export const Profile = styled.div`
         @media ${(props) => props.theme.breakpoints.lg} {
             width: 7rem;
             height: 7rem;
+        }
+
+        @media ${(props) => props.theme.breakpoints.sm} {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        @media ${(props) => props.theme.breakpoints.xs} {
+            & p {
+                display: none;
+            }
         }
     }
 `;
@@ -49,6 +64,20 @@ export const Button = styled.button`
         color: #506d8b;
         transform: translateX(2px);
     }
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        gap: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        gap: 0.5rem;
+    }
+
+    @media ${(props) => props.theme.breakpoints.xs} {
+        & p {
+            display: none;
+        }
+    }
 `;
 
 export const Line = styled.span`
@@ -56,7 +85,11 @@ export const Line = styled.span`
     margin-top: 3rem;
     border: solid 0.15px #506d8b;
 
-    @media ${(props) => props.theme.breakpoints.lg} {
+    @media screen and (max-width: 1000px) {
         width: 12.5rem;
+    }
+
+    @media ${(props) => props.theme.breakpoints.lg} {
+        display: none;
     }
 `;

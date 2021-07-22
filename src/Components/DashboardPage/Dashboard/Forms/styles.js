@@ -2,20 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import styled from "styled-components";
 
 export default makeStyles((muiBaseTheme) => ({
-    card: {
-        width: "35rem",
-        height: "100%",
-        color: "#506d8b",
-
-        padding: "3rem",
-
-        "@media (min-width: 1100px)": {
-            card: {
-                width: "32.5rem",
-            },
-        },
-    },
-
     avatar: {
         display: "inline-block",
         border: "2px solid white",
@@ -43,14 +29,29 @@ export const CardDiv = styled.div`
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
-    /* @media ${(props) => props.theme.breakpoints.xl} {
-        width: 33.5rem;
-        padding: 2rem;
-    } */
-
     @media screen and (max-width: 1100px) {
         padding: 2rem;
         width: 32.5rem;
+    }
+
+    @media ${(props) => props.theme.breakpoints.lg} {
+        margin-top: 3rem;
+        width: 35rem;
+        align-self: center;
+    }
+
+    @media screen and (max-width: 420px) {
+        padding: 1.7rem;
+        width: 33.5rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        padding: 1.5rem;
+        width: 31.5rem;
+    }
+
+    @media screen and (max-width: 330px) {
+        width: 27.5rem;
     }
 `;
 
@@ -92,4 +93,10 @@ export const SecondForms = styled.div`
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 360px) {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 `;
