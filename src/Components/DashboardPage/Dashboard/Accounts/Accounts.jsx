@@ -1,9 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { makeStyles } from "@material-ui/core/styles";
-import { Card } from "@material-ui/core";
 import Activity from "./Activity";
-import { Router, Link, Route, Switch } from "react-router-dom";
 
 // Styling
 const Container = styled.div`

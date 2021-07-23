@@ -1,4 +1,4 @@
-import { Container, Content, Info, Text, Div } from "./styles";
+import { Content, Info, Text, Div } from "./styles";
 import { v4 as uuidv4 } from "uuid";
 
 const Activity = ({ activity, savActivity, isActive }) => {
